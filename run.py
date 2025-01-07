@@ -35,6 +35,3 @@ dictionnary_harmeet = {
 }
 
 print(dictionnary_harmeet["key1"])
-
-{['X',20],['X',40],['Harmeet',40],['Harmeet',60]}
-

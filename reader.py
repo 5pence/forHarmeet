@@ -20,7 +20,7 @@ for name, value in data_list:
         result[name] = []
     result[name].append(value)
 
-# now loop throug and find average
+# now loop through and find average
 # and print them for each item
 for key, values in result.items():
     avg = sum(values) / len(values)

@@ -70,3 +70,28 @@ try:
     print(check_positive(-5))
 except ValueError as e:
     print(e)
+
+
+class EdgbastionException(Exception):
+    pass
+
+
+try:
+    raise EdgbastionException("This is some crazy message from a special exception")
+except EdgbastionException as e:
+    print(e)
+
+
+class AgeError(Exception):
+    pass
+
+
+def check_age(age):
+    if age < 18:
+        raise AgeError("You order these drinks you need to be 18 or over")
+
+
+try:
+    check_age(16)
+except AgeError as e:
+    print(e)
